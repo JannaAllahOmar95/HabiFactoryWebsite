@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habi Factory - Premium Egyptian Wood Products</title>
+    <script src="/_sdk/element_sdk.js"></script>
+    <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+    <script src="https://cdn.tailwindcss.com" type="text/javascript"></script>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="icon" type="image/png" href="images/habilogo2.png" style="width:160px; height:auto;">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-image" style="cursor: pointer;" data-section="home">
+                    <img src="images/habilogo2.png" alt="Logo">
+                </div><span class="logo-text" id="logoText">Habi Factory</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" data-section="home" class="nav-link">Home</a></li>
+                <li><a href="#" data-section="products" class="nav-link">Projects</a></li>
+                <li><a href="#" data-section="about" class="nav-link">About Us</a></li>
+                <li><a href="#" data-section="gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#" data-section="contact" class="nav-link">Contact</a></li>
+            </ul><button class="lang-toggle" id="langToggle">العربية</button>
+        </div>
+    </nav>
+    <div class="hero active" id="home">
+        <div class="hero-content">
+            <h1 id="heroTitle">Crafting Excellence in Egyptian Wood</h1>
+            <p id="heroSubtitle">Premium wood products manufactured with precision and care for over 20 years</p><a
+                href="#" class="cta-button" data-section="contact" id="ctaButton">Request a Quote</a>
+        </div>
+    </div>
+    <div class="section" id="products">
+        <h2 class="section-title" id="productsTitle">Our Projects</h2>
+        <p class="section-subtitle" id="productsSubtitle">High-quality wood products for every need</p>
+        <div class="products-grid">
+            <!-- Product Card 1: Wooden Doors-->
+            <div class="product-card" style="cursor: pointer;" data-product="product1">
+                <div class="product-image">
+                    <img src="images/product01.jpg" alt="">
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title" id="product1Title">Wooden Doors</h3>
+                    <p class="product-description" id="product1Desc">Premium hardwood doors and flooring solutions.
+                        Durable, beautiful, and built to last for residential and commercial projects.</p>
+                </div>
+            </div>
+            <!-- Product Card 2: Home Furniture -->
+            <div class="product-card" style="cursor: pointer;" data-product="product2">
+                <div class="product-image">
+                    <img src="images/product02.jpg" alt="">
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title" id="product2Title">Home Furniture</h3>
+                    <p class="product-description" id="product2Desc">Precision-cut custom wood components for
+                        contractors and furniture manufacturers. Tailored to your exact specifications."</p>
+                </div>
+            </div>
+            <!-- Product Card 3: Hotel Furniture -->
+            <div class="product-card" style="cursor: pointer;" data-product="product3">
+                <div class="product-image">
+                    <img src="images/product03.jpg" alt="">
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title" id="product3Title">Hotel Furniture</h3>
+                    <p class="product-description" id="product3Desc">Sustainably sourced beechwood, oak, and local
+                        timber. Quality lumber for all your woodworking needs.</p>
+                </div>
+            </div>
+            <!-- Product Card 4: Office Furniture -->
+            <div class="product-card" style="cursor: pointer;" data-product="product4">
+                <div class="product-image">
+                    <img src="images/product04.jpeg" alt="">
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title" id="product4Title">Office Furniture</h3>
+                    <p class="product-description" id="product4Desc">Crafted with precision and durability — tailored to
+                        provide ergonomic comfort, organized workspaces, and timeless style for your professional
+                        environment.</p>
+                </div>
+            </div>
+            <!-- Product Card 5: Artworks & Decorations -->
+            <div class="product-card" style="cursor: pointer;" data-product="product5">
+                <div class="product-image">
+                    <img src="images/product05.jpg" alt="">
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title" id="product5Title">Artworks & Decorations</h3>
+                    <p class="product-description" id="product5Desc">Designed to elevate interior spaces — adding
+                        character, warmth, and visual appeal through thoughtfully crafted wooden pieces that complement
+                        both modern and traditional environments.</p>
+                </div>
+            </div>
+            <!-- Product Card 6: Ongoing Projects -->
+            <div class="product-card" style="cursor: pointer;" data-product="product6">
+                <div class="product-image">
+                    <img src="images/product06.jpg" alt="">
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title" id="product6Title">Ongoing Projects</h3>
+                    <p class="product-description" id="product6Desc">Ongoing projects that showcase continuous
+                        craftsmanship and innovation — featuring custom wooden installations, furniture builds, and
+                        interior solutions currently in production for clients across various sectors.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="about">
+        <h2 class="section-title" id="aboutTitle">About Habi Factory</h2>
+        <div class="about-content">
+            <div class="about-image" id="aboutImageContainer">
+                <div class="about-slide active" id="slide1">
+                    <div class="about-slide-placeholder">
+                        <img src="images/Slideshow01.jpg" alt="">
+                    </div>
+                </div>
+                <div class="about-slide" id="slide2">
+                    <div class="about-slide-placeholder">
+                        <img src="images/Slideshow02.jpg" alt="">
+                    </div>
+                </div>
+                <div class="about-slide" id="slide3">
+                    <div class="about-slide-placeholder">
+                        <img src="images/Slideshow03.jpg" alt="">
+                    </div>
+                </div>
+                <div class="about-slide" id="slide4">
+                    <div class="about-slide-placeholder">
+                        <img src="images/Slideshow04.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="about-text">
+                <h3 id="aboutSubtitle">Egyptian Craftsmanship Since 2001</h3>
+                <p id="aboutText1">Hapi Company offers high-quality wooden products, including doors and furniture for
+                    hotels, homes, and offices. Our experience in the field began in 2001 and developed until we
+                    established our own factory in 2006 to provide integrated manufacturing according to modern
+                    standards.</p>
+                <p id="aboutText2">We rely on a production line equipped with carefully selected machinery and a trained
+                    team that delivers meticulous work, ensuring consistent quality at every stage. We operate within an
+                    integrated production system with continuous quality control and waste reduction, allowing us to
+                    offer high-quality Hapi-branded products at competitive prices.</p>
+                <!-- Company Features Grid -->
+                <div class="about-features">
+                    <div class="feature-item"><span class="feature-icon">✓</span> <span class="feature-text"
+                            id="feature1">Quality Standards</span>
+                    </div>
+                    <div class="feature-item"><span class="feature-icon">✓</span> <span class="feature-text"
+                            id="feature2">Sustainable Sourcing</span>
+                    </div>
+                    <div class="feature-item"><span class="feature-icon">✓</span> <span class="feature-text"
+                            id="feature3">Precision Manufacturing</span>
+                    </div>
+                    <div class="feature-item"><span class="feature-icon">✓</span> <span class="feature-text"
+                            id="feature4">Expert Craftsmanship</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="gallery">
+        <h2 class="section-title" id="galleryTitle">Our Projects</h2>
+        <p class="section-subtitle" id="gallerySubtitle">A showcase of our finest work</p>
+        <div class="gallery-grid">
+            <div class="gallery-item" id="galleryVideo1">
+                <video class="gallery-video" controls>
+                    <source src="Videos/galleryVideo01.mp4" type="video/mp4"> Your browser does not support the video
+                    tag.
+                </video>
+            </div>
+            <div class="gallery-item" id="galleryVideo2">
+                <video class="gallery-video" controls>
+                    <source src="Videos/galleryVideo02.mp4" type="video/mp4"> Your browser does not support the video
+                    tag.
+                </video>
+            </div>
+            <div class="gallery-item" id="galleryVideo3">
+                <video class="gallery-video" controls>
+                    <source src="Videos/galleryVideo03.mp4" type="video/mp4"> Your browser does not support the video
+                    tag.
+                </video>
+            </div>
+            <div class="gallery-item" id="galleryVideo4">
+                <img src="images/Slideshow02.jpg" alt="">
+            </div>
+            <div class="gallery-item" id="galleryVideo5">
+                <img src="images/Slideshow03.jpg" alt="">
+            </div>
+            <div class="gallery-item" id="galleryVideo6">
+                <img src="images/Slideshow04.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="section" id="contact">
+        <h2 class="section-title" id="contactTitle">Contact Us</h2>
+        <p class="section-subtitle" id="contactSubtitle">Get in touch for quotes and inquiries</p>
+        <div class="contact-grid"><!-- Contact Information Card -->
+            <div class="contact-info"><!-- Phone Contact -->
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        📞
+                    </div>
+                    <div class="contact-details">
+                        <h4 id="phoneLabel">Phone</h4>
+                        <p><a href="tel:+201108738368" id="phoneNumber">+20 110 873 8368</a></p>
+                    </div>
+                </div><!-- Email Contact -->
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        ✉️
+                    </div>
+                    <div class="contact-details">
+                        <h4 id="emailLabel">Email</h4>
+                        <p><a href="mailto:hcsst11@gmail.com" id="emailAddress">hcsst11@gmail.com</a></p>
+                    </div>
+                </div><!-- WhatsApp Contact -->
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        💬
+                    </div>
+                    <div class="contact-details">
+                        <h4 id="whatsappLabel">WhatsApp</h4>
+                        <p><a href="https://wa.me/201108738368" target="_blank" rel="noopener noreferrer"
+                                id="whatsappNumber">+20 110 873 8368</a></p>
+                    </div>
+                </div><!-- Location -->
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        📍
+                    </div>
+                    <div class="contact-details">
+                        <h4 id="locationLabel">Location</h4>
+                        <p id="locationAddress">Monshaat El-Salam, Bilbeis, Al-Sharqia Governorate 7050173</p>
+                    </div>
+                </div>
+            </div><!-- Map Placeholder -->
+            <div class="map-placeholder">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3443.81110002909!2d31.426717999999997!3d30.327890500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145808b909f8bfd7%3A0xd6d8bf851938a390!2sMonshaat%20El-Salam%2C%20Bilbeis%2C%20Al-Sharqia%20Governorate%207050173!5e0!3m2!1sen!2seg!4v1765116050994!5m2!1sen!2seg"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p id="footerText">© 2026 Habi Factory. All rights reserved. Proudly Egyptian.</p>
+    </footer>
+    <script>
+        const defaultConfig = {
+            business_name: "Habi Factory",
+            tagline: "Crafting Excellence in Egyptian Wood",
+            location: "Monshaat El-Salam, Bilbeis, Al-Sharqia Governorate 7050173",
+            phone: "+20 110 873 8368",
+            email: "hcsst11@gmail.com",
+            whatsapp: "+20 110 873 8368",
+            primary_color: "#d4b5a0",      // Navigation & footer background
+            secondary_color: "#8b7355",    // Logo & headings
+            accent_color: "#a8956b",       // Buttons & links
+            background_color: "#faf8f5",   // Page background
+            text_color: "#6b5d52",         // Body text
+            font_family: "Segoe UI",
+            font_size: 16
+        };
+        const translations = {
+            // English translations
+            en: {
+                home: "Home",
+                products: "Projects",
+                about: "About Us",
+                gallery: "Gallery",
+                contact: "Contact",
+                langButton: "العربية",
+                heroTitle: "Crafting Excellence in Egyptian Wood",
+                heroSubtitle: "Premium wood products manufactured with precision and care for over 20 years",
+                ctaButton: "Request a Quote",
+                productsTitle: "Our Projects",
+                productsSubtitle: "High-quality wood products for every need",
+                product1Title: "Wooden Doors",
+                product1Desc: "Premium hardwood doors and flooring solutions. Durable, beautiful, and built to last for residential and commercial projects.",
+                product2Title: "Home Furniture",
+                product2Desc: "Precision-cut custom wood components for contractors and furniture manufacturers. Tailored to your exact specifications.",
+                product3Title: "Hotel Furniture",
+                product3Desc: "Sustainably sourced beechwood, oak, and local timber. Quality lumber for all your woodworking needs.",
+                product4Title: "Office furniture",
+                product4Desc: "Crafted with precision and durability — tailored to provide ergonomic comfort, organized workspaces, and timeless style for your professional environment.",
+                product5Title: "Artworks and Decorations",
+                product5Desc: "Designed to elevate interior spaces — adding character, warmth, and visual appeal through thoughtfully crafted wooden pieces that complement both modern and traditional environments.",
+                product6Title: "Ongoing projects",
+                product6Desc: "Ongoing projects that showcase continuous craftsmanship and innovation — featuring custom wooden installations, furniture builds, and interior solutions currently in production for clients across various sectors.",
+                aboutTitle: "About Habi Factory",
+                aboutSubtitle: "Egyptian Craftsmanship Since 2001",
+                aboutText1: "Hapi Company offers high-quality wooden products, including doors and furniture for hotels, homes, and offices. Our experience in the field began in 2001 and developed until we established our own factory in 2006 to provide integrated manufacturing according to modern standards.",
+                aboutText2: "We rely on a production line equipped with carefully selected machinery and a trained team that delivers meticulous work, ensuring consistent quality at every stage. We operate within an integrated production system with continuous quality control and waste reduction, allowing us to offer high-quality Hapi-branded products at competitive prices.",
+                feature1: "Quality Standards",
+                feature2: "Sustainable Sourcing",
+                feature3: "Precision Manufacturing",
+                feature4: "Expert Craftsmanship",
+                galleryTitle: "Our Projects",
+                gallerySubtitle: "A showcase of our finest work",
+                contactTitle: "Contact Us",
+                contactSubtitle: "Get in touch for quotes and inquiries",
+                phoneLabel: "Phone",
+                emailLabel: "Email",
+                whatsappLabel: "WhatsApp",
+                locationLabel: "Location",
+                footerText: "© 2026 Habi Factory. All rights reserved. Proudly Egyptian."
+            },
+            // Arabic translations
+            ar: {
+                home: "الرئيسية",
+                products: "مشاريعنا",
+                about: "من نحن",
+                gallery: "المعرض",
+                contact: "اتصل بنا",
+                langButton: "English",
+                heroTitle: "صناعة التميز في الأخشاب المصرية",
+                heroSubtitle: "منتجات خشبية فاخرة مصنوعة بدقة وعناية لأكثر من 20 عامًا",
+                ctaButton: "اطلب عرض سعر",
+                productsTitle: "مشاريعنا",
+                productsSubtitle: "منتجات خشبية عالية الجودة لكل احتياجاتك.",
+                product1Title: "أبواب خشبية",
+                product1Desc: "أبواب وأرضيات خشبية فاخرة. متينة وجميلة ومصممة لتدوم للمشاريع السكنية والتجارية.",
+                product2Title: "أثاث منزلي",
+                product2Desc: "مكونات خشبية مخصصة مقطوعة بدقة للمقاولين ومصنعي الأثاث. مصممة وفقًا لمواصفاتك الدقيقة.",
+                product3Title: "أثاث فندقي",
+                product3Desc: "خشب الزان والبلوط والأخشاب المحلية من مصادر مستدامة. أخشاب عالية الجودة لجميع احتياجاتك.",
+                product4Title: "أثاث مكتبي",
+                product4Desc: "مصمم بدقة ومتانة — لتوفير راحة جسمانية، وتنظيم أماكن العمل، وأسلوب خالد لبيئتك المهنية.",
+                product5Title: "أعمال فنية و ديكورات",
+                product5Desc: "مصممة لرفع مستوى المساحات الداخلية — بإضافة الطابع والدفء والجاذبية البصرية من خلال قطع خشبية مصممة بعناية تكمل كلًا من البيئات الحديثة والتقليدية.",
+                product6Title: "مشروعات جاري العمل عليها",
+                product6Desc: "مشاريع جارية تعرض الحرفية المستمرة والابتكار — تشمل التركيبات الخشبية المخصصة، وبناء الأثاث، وحلول الديكور الداخلي قيد التنفيذ حالياً للعملاء في مختلف القطاعات.",
+                aboutTitle: "عن مصنع حابي للمنتجات الخشبية",
+                aboutSubtitle: "حرفية مصرية منذ 2001",
+                aboutText1: "تقدّم شركة حابي منتجات خشبية عالية الجودة تشمل الأبواب والأثاث الفندقي والمنزلي والمكتبي. بدأت خبرتنا في المجال عام 2001 وتطورت حتى تأسيس مصنعنا الخاص في 2006 لتقديم تصنيع متكامل بمعايير حديثة.",
+                aboutText2: "نعتمد على خط إنتاج مجهّز بماكينات مختارة بعناية، وفريق مدرّب يقدم عملاً دقيقًا يضمن جودة ثابتة في كل مرحلة. نعمل وفق نظام إنتاج متكامل مع مراقبة جودة مستمرة وتقليل للهالك، لنقدم منتجات تحمل اسم حابي بجودة عالية وأسعار تنافسية.",
+                feature1: "معايير الجودة",
+                feature2: "مصادر مستدامة",
+                feature3: "تصنيع دقيق",
+                feature4: "حرفية خبيرة",
+                galleryTitle: "مشاريعنا",
+                gallerySubtitle: "عرض لأفضل أعمالنا",
+                contactTitle: "اتصل بنا",
+                contactSubtitle: "تواصل معنا للحصول على عروض الأسعار والاستفسارات",
+                phoneLabel: "الهاتف",
+                emailLabel: "البريد الإلكتروني",
+                whatsappLabel: "واتساب",
+                locationLabel: "الموقع",
+                footerText: "© 2026 مصنع حابي للمنتجات الخشبية. جميع الحقوق محفوظة. فخر مصري."
+            }
+        };
+
+        let currentLang = 'en';
+
+        function updateContent(config) {
+            const customFont = config.font_family || defaultConfig.font_family;
+            const baseSize = config.font_size || defaultConfig.font_size;
+            const baseFontStack = 'Tahoma, Geneva, Verdana, sans-serif';
+
+            // Apply font family and size to body
+            document.body.style.fontFamily = `${customFont}, ${baseFontStack}`;
+            document.body.style.fontSize = `${baseSize}px`;
+            document.body.style.backgroundColor = config.background_color || defaultConfig.background_color;
+            document.body.style.color = config.text_color || defaultConfig.text_color;
+
+            // Update navigation colors
+            const nav = document.querySelector('nav');
+            nav.style.backgroundColor = config.primary_color || defaultConfig.primary_color;
+
+            const logoImage = document.querySelector('.logo-image');
+            logoImage.style.backgroundColor = '#ffffff';
+
+            const logoText = document.querySelector('.logo-text');
+            logoText.style.color = config.secondary_color || defaultConfig.secondary_color;
+
+            // Update button colors
+            const ctaButtons = document.querySelectorAll('.cta-button');
+            ctaButtons.forEach(btn => {
+                btn.style.backgroundColor = config.accent_color || defaultConfig.accent_color;
+                btn.style.color = config.background_color || defaultConfig.background_color;
+            });
+
+            // Update language toggle button
+            const langToggle = document.querySelector('.lang-toggle');
+            langToggle.style.backgroundColor = config.secondary_color || defaultConfig.secondary_color;
+            langToggle.style.color = config.background_color || defaultConfig.background_color;
+
+            // Update footer colors
+            const footer = document.querySelector('footer');
+            footer.style.backgroundColor = config.primary_color || defaultConfig.primary_color;
+            footer.style.color = config.background_color || defaultConfig.background_color;
+
+            // Update business name in logo
+            document.getElementById('logoText').textContent = config.business_name || defaultConfig.business_name;
+
+            // Update contact information
+            document.getElementById('phoneNumber').textContent = config.phone || defaultConfig.phone;
+            document.getElementById('phoneNumber').href = `tel:${config.phone || defaultConfig.phone}`;
+            document.getElementById('emailAddress').textContent = config.email || defaultConfig.email;
+            document.getElementById('emailAddress').href = `mailto:${config.email || defaultConfig.email}`;
+            document.getElementById('whatsappNumber').textContent = config.whatsapp || defaultConfig.whatsapp;
+            document.getElementById('whatsappNumber').href = `https://wa.me/${(config.whatsapp || defaultConfig.whatsapp).replace(/[^0-9]/g, '')}`;
+            document.getElementById('locationAddress').textContent = config.location || defaultConfig.location;
+
+            // Scale hero section text
+            const heroTitle = document.getElementById('heroTitle');
+            heroTitle.style.fontSize = `${baseSize * 2.2}px`;
+
+
+            const heroSubtitle = document.getElementById('heroSubtitle');
+            heroSubtitle.style.fontSize = `${baseSize * 1.4}px`;
+
+            // Scale section titles
+            const sectionTitles = document.querySelectorAll('.section-title');
+            sectionTitles.forEach(title => {
+                title.style.fontSize = `${baseSize * 2.5}px`;
+                title.style.color = config.secondary_color || defaultConfig.secondary_color;
+            });
+
+            // Scale section subtitles
+            const sectionSubtitles = document.querySelectorAll('.section-subtitle');
+            sectionSubtitles.forEach(subtitle => {
+                subtitle.style.fontSize = `${baseSize * 1.2}px`;
+            });
+
+            // Scale product titles
+            const productTitles = document.querySelectorAll('.product-title');
+            productTitles.forEach(title => {
+                title.style.fontSize = `${baseSize * 1.6}px`;
+                title.style.color = config.secondary_color || defaultConfig.secondary_color;
+            });
+
+            // Scale product descriptions
+            const productDescriptions = document.querySelectorAll('.product-description');
+            productDescriptions.forEach(desc => {
+                desc.style.fontSize = `${baseSize * 1.1}px`;
+            });
+
+            // Update contact link colors
+            const contactLinks = document.querySelectorAll('.contact-details a');
+            contactLinks.forEach(link => {
+                link.style.color = config.accent_color || defaultConfig.accent_color;
+            });
+
+            // Apply current language translations
+            updateLanguage(currentLang);
+        }
+
+
+        function updateLanguage(lang) {
+            currentLang = lang;
+            const t = translations[lang];
+
+            // Set document direction (LTR for English, RTL for Arabic)
+            document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+
+            // Update navigation links
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks[0].textContent = t.home;
+            navLinks[1].textContent = t.products;
+            navLinks[2].textContent = t.about;
+            navLinks[3].textContent = t.gallery;
+            navLinks[4].textContent = t.contact;
+
+            // Update all content text
+            document.getElementById('langToggle').textContent = t.langButton;
+            document.getElementById('heroTitle').textContent = t.heroTitle;
+            document.getElementById('heroSubtitle').textContent = t.heroSubtitle;
+            document.getElementById('ctaButton').textContent = t.ctaButton;
+            document.getElementById('productsTitle').textContent = t.productsTitle;
+            document.getElementById('productsSubtitle').textContent = t.productsSubtitle;
+            document.getElementById('product1Title').textContent = t.product1Title;
+            document.getElementById('product1Desc').textContent = t.product1Desc;
+            document.getElementById('product2Title').textContent = t.product2Title;
+            document.getElementById('product2Desc').textContent = t.product2Desc;
+            document.getElementById('product3Title').textContent = t.product3Title;
+            document.getElementById('product3Desc').textContent = t.product3Desc;
+            document.getElementById('product4Title').textContent = t.product4Title;
+            document.getElementById('product4Desc').textContent = t.product4Desc;
+            document.getElementById('product5Title').textContent = t.product5Title;
+            document.getElementById('product5Desc').textContent = t.product5Desc;
+            document.getElementById('product6Title').textContent = t.product6Title;
+            document.getElementById('product6Desc').textContent = t.product6Desc;
+            document.getElementById('aboutTitle').textContent = t.aboutTitle;
+            document.getElementById('aboutSubtitle').textContent = t.aboutSubtitle;
+            document.getElementById('aboutText1').textContent = t.aboutText1;
+            document.getElementById('aboutText2').textContent = t.aboutText2;
+            document.getElementById('feature1').textContent = t.feature1;
+            document.getElementById('feature2').textContent = t.feature2;
+            document.getElementById('feature3').textContent = t.feature3;
+            document.getElementById('feature4').textContent = t.feature4;
+            document.getElementById('galleryTitle').textContent = t.galleryTitle;
+            document.getElementById('gallerySubtitle').textContent = t.gallerySubtitle;
+            document.getElementById('contactTitle').textContent = t.contactTitle;
+            document.getElementById('contactSubtitle').textContent = t.contactSubtitle;
+            document.getElementById('phoneLabel').textContent = t.phoneLabel;
+            document.getElementById('emailLabel').textContent = t.emailLabel;
+            document.getElementById('whatsappLabel').textContent = t.whatsappLabel;
+            document.getElementById('locationLabel').textContent = t.locationLabel;
+            document.getElementById('footerText').textContent = t.footerText;
+        }
+
+        /* ============================================
+           SLIDESHOW FUNCTIONALITY
+           Automatic slideshow in About section
+           ============================================ */
+        let currentSlide = 0;
+        const slides = [
+            document.getElementById('slide1'),
+            document.getElementById('slide2'),
+            document.getElementById('slide3'),
+            document.getElementById('slide4')
+        ];
+
+        function showNextSlide() {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+
+        // Start slideshow - change every 2 seconds
+        setInterval(showNextSlide, 2000);
+        /* ============================================
+                   EVENT LISTENERS: Slideshow Image Uploads
+                   Allow users to upload custom images for slideshow
+                   ============================================ */
+
+        document.getElementById('langToggle').addEventListener('click', () => {
+            currentLang = currentLang === 'en' ? 'ar' : 'en';
+            updateLanguage(currentLang);
+        });
+        document.querySelectorAll('[data-section]').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const sectionId = e.target.getAttribute('data-section');
+
+                // Hide all sections
+                document.querySelectorAll('.section').forEach(section => {
+                    section.classList.remove('active');
+                });
+
+                // Show target section
+                const targetSection = document.getElementById(sectionId);
+                if (targetSection) {
+                    targetSection.classList.add('active');
+                    targetSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+        const element = {
+            defaultConfig: defaultConfig,
+
+            // Called when config changes
+            onConfigChange: async (config) => {
+                updateContent(config);
+            },
+
+            // Defines what can be edited in Canva
+            mapToCapabilities: (config) => ({
+                recolorables: [
+                    // Primary color (Navigation & Footer)
+                    {
+                        get: () => config.primary_color || defaultConfig.primary_color,
+                        set: (value) => {
+                            config.primary_color = value;
+                            if (window.elementSdk) {
+                                window.elementSdk.setConfig({ primary_color: value });
+                            }
+                        }
+                    },
+                    // Secondary color (Logo & Headings)
+                    {
+                        get: () => config.secondary_color || defaultConfig.secondary_color,
+                        set: (value) => {
+                            config.secondary_color = value;
+                            if (window.elementSdk) {
+                                window.elementSdk.setConfig({ secondary_color: value });
+                            }
+                        }
+                    },
+                    // Accent color (Buttons & Links)
+                    {
+                        get: () => config.accent_color || defaultConfig.accent_color,
+                        set: (value) => {
+                            config.accent_color = value;
+                            if (window.elementSdk) {
+                                window.elementSdk.setConfig({ accent_color: value });
+                            }
+                        }
+                    },
+                    // Background color
+                    {
+                        get: () => config.background_color || defaultConfig.background_color,
+                        set: (value) => {
+                            config.background_color = value;
+                            if (window.elementSdk) {
+                                window.elementSdk.setConfig({ background_color: value });
+                            }
+                        }
+                    },
+                    // Text color
+                    {
+                        get: () => config.text_color || defaultConfig.text_color,
+                        set: (value) => {
+                            config.text_color = value;
+                            if (window.elementSdk) {
+                                window.elementSdk.setConfig({ text_color: value });
+                            }
+                        }
+                    }
+                ],
+                borderables: [],
+                // Font family editing
+                fontEditable: {
+                    get: () => config.font_family || defaultConfig.font_family,
+                    set: (value) => {
+                        config.font_family = value;
+                        if (window.elementSdk) {
+                            window.elementSdk.setConfig({ font_family: value });
+                        }
+                    }
+                },
+                // Font size editing
+                fontSizeable: {
+                    get: () => config.font_size || defaultConfig.font_size,
+                    set: (value) => {
+                        config.font_size = value;
+                        if (window.elementSdk) {
+                            window.elementSdk.setConfig({ font_size: value });
+                        }
+                    }
+                }
+            }),
+
+            // Maps config values to edit panel fields
+            mapToEditPanelValues: (config) => new Map([
+                ["business_name", config.business_name || defaultConfig.business_name],
+                ["tagline", config.tagline || defaultConfig.tagline],
+                ["location", config.location || defaultConfig.location],
+                ["phone", config.phone || defaultConfig.phone],
+                ["email", config.email || defaultConfig.email],
+                ["whatsapp", config.whatsapp || defaultConfig.whatsapp]
+            ])
+        };
+        if (window.elementSdk) {
+            window.elementSdk.init(element);
+        }
+        updateContent(defaultConfig);
+    </script><!-- JAVASCRIPT CODE - END -->
+    <script>(function () { function c() { var b = a.contentDocument || a.contentWindow.document; if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'9aa44bc2441c5363',t:'MTc2NTExMzM3MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>
+</body>
+
+</html>
